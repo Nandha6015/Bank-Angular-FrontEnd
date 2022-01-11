@@ -9,7 +9,9 @@ import { FooterComponent } from './component/footer/footer.component';
 import { LoansComponent } from './component/loans/loans.component';
 import { HomeComponent } from './component/home/home.component';
 import { AboutusComponent } from './component/aboutus/aboutus.component';
-
+import { RegisterComponent } from './register/register.component';
+import { ContactComponent } from './contact/contact.component';
+import 'font-awesome/css/font-awesome.min.css';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +21,8 @@ import { AboutusComponent } from './component/aboutus/aboutus.component';
     LoansComponent,
     HomeComponent,
     AboutusComponent,
+    RegisterComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
