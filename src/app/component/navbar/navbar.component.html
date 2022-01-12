@@ -4,8 +4,7 @@
 >
   <div class="container-fluid">
     <a class="navbar-brand" [routerLink]="['/']"
-      ><img
-        src="https://iconape.com/wp-content/files/wx/209755/png/sbi-state-bank-of-india-logo.png"
+      ><img src="assets/images/logo.png"
     /></a>
     <button
       class="navbar-toggler"
@@ -35,7 +34,7 @@
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle {{ loan }}"
-            href="#"
+            [routerLink]="['loan']"
             id="navbarDropdownMenuLink"
             role="button"
             data-bs-toggle="dropdown"
@@ -45,7 +44,9 @@
             Loans
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Personal loan</a></li>
+            <li>
+              <a>Personal loan</a>
+            </li>
             <li><a class="dropdown-item" href="#">Vehicle loan</a></li>
             <li><a class="dropdown-item" href="#">Housing loan</a></li>
           </ul>
