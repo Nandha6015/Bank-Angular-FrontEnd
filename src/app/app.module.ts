@@ -13,6 +13,9 @@ import { RegisterComponent } from './component/register/register.component';
 import { ContactComponent } from './component/contact/contact.component';
 import 'font-awesome/css/font-awesome.min.css';
 import { ProfileComponent } from './component/profile/profile.component';
+import { HomeloanComponent } from './homeloan/homeloan.component';
+import { CarloanComponent } from './carloan/carloan.component';
+import { GoldloanComponent } from './goldloan/goldloan.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { ProfileComponent } from './component/profile/profile.component';
     RegisterComponent,
     ContactComponent,
     ProfileComponent,
+    HomeloanComponent,
+    CarloanComponent,
+    GoldloanComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

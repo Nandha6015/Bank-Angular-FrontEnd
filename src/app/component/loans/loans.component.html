@@ -1,45 +1,71 @@
 <section class="vh-100">
+  <div
+    class="container-fluid mx-auto mt-5 mb-5 col-12"
+    style="text-align: center"
+  >
+    <div class="hd">Why People Believe in Us</div>
+    <p>
+      <small class="text-muted"
+        >Always render more and better service than <br />is expected of you, no
+        matter what your ask may be.</small
+      >
+    </p>
+  </div>
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-xl-10">
-        <div class="card" style="border-radius: 25px">
-          <div class="row g-0">
-            <div class="col-md-6 col-lg-5 d-none d-md-block">
-              <img
-                id="image"
-                src="assets/images/login1.png"
-                alt="login form"
-                class="img-fluid"
-                style="border-radius: 5 rem"
-              />
+        <div class="card ps-5 pt-3" style="border-radius: 25px">
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/images/gold_loan1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Gold Loan</h5>
+              <p class="card-text">
+                SBI Gold Loan can be availed by pledge of gold ornaments
+                including gold coins sold by Banks with minimum paper work and
+                low interest rate.
+              </p>
+              <a [routerLink]="['/goldloan']" class="btn btn-primary"
+                >Gold Loan Estimation</a
+              >
             </div>
           </div>
-        </div>
-
-        <div class="card" style="border-radius: 25px">
-          <div class="row g-0">
-            <div class="col-md-6 col-lg-5 d-none d-md-block">
-              <img
-                id="image"
-                src="assets/images/login1.png"
-                alt="login form"
-                class="img-fluid"
-                style="border-radius: 5 rem"
-              />
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/images/homeloan1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Home Loans</h5>
+              <p class="card-text">
+                SBI Home Loans offers a one stop solution to a home buyer. You
+                can browse through our range of home loan products, check your
+                eligibility and apply online!
+              </p>
+              <a [routerLink]="['/homeloan']" class="btn btn-primary"
+                >Home Loan Estimation</a
+              >
             </div>
           </div>
-        </div>
-
-        <div class="card" style="border-radius: 25px">
-          <div class="row g-0">
-            <div class="col-md-6 col-lg-5 d-none d-md-block">
-              <img
-                id="image"
-                src="assets/images/login1.png"
-                alt="login form"
-                class="img-fluid"
-                style="border-radius: 5 rem"
-              />
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/images/carloan1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Car Loan</h5>
+              <p class="card-text">
+                SBI offers car loans to its customers with interest rates
+                ranging between 7.70% and 13.25% and tenure of up to 7 years.
+              </p>
+              <a [routerLink]="['/carloan']" class="btn btn-primary"
+                >Car Loan Estimation</a
+              >
             </div>
           </div>
         </div>
