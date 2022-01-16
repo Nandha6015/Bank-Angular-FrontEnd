@@ -13,21 +13,31 @@
                 style="border-radius: 5 rem"
               />
             </div>
-            <div class="col-md-6 col-lg-7 d-flex align-items-center">
-              <div class="card-body p-4 p-lg-5 text-black">
-                <form>
-                  <label for="n1">Principle Amount</label><br />
-                  <input type="number" name="Principle amount" #n3 /><br />
-                  <label for="n2">Year</label><br />
-                  <input type="number" name="Year" #n4 /><br />
+            <div
+              class="col-md-6 col-lg-7 d-flex align-items-center"
+              style="background-color: lightblue"
+            >
+              <div
+                class="card-body p-8 p-lg-5 text-black col d-flex justify-content-center"
+              >
+                <div
+                  class="border border-dark p-lg-5 shadow-lg pt-2"
+                  style="border-radius: 15px"
+                >
+                  <form>
+                    <label for="n1">Principle Amount</label><br />
+                    <input type="number" name="Principle amount" #n3 /><br />
+                    <label for="n2">Year</label><br />
+                    <input type="number" name="Year" #n4 /><br />
 
-                  <input
-                    type="button"
-                    value="check"
-                    (click)="dem(n3.valueAsNumber, n4.valueAsNumber)"
-                  />
-                  <p>The interest is {{ amount1 | currency: "INR" }}</p>
-                </form>
+                    <input
+                      type="button"
+                      value="check"
+                      (click)="dem(n3.valueAsNumber, n4.valueAsNumber)"
+                    />
+                    <p>The interest is {{ amount1 | currency: "INR" }}</p>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

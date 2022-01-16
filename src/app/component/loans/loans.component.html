@@ -1,75 +1,83 @@
-<section class="vh-100">
+<div class="container d-flex flex-column align-items-center">
   <div
-    class="container-fluid mx-auto mt-5 mb-5 col-12"
-    style="text-align: center"
+    class="card col-xl-10 mt-5 shadow-lg"
+    style="background-color: rgb(124, 213, 248)"
   >
-    <div class="hd">Why People Believe in Us</div>
-    <p>
-      <small class="text-muted"
-        >Always render more and better service than <br />is expected of you, no
-        matter what your ask may be.</small
-      >
-    </p>
-  </div>
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col col-xl-10">
-        <div class="card ps-5 pt-3" style="border-radius: 25px">
-          <div class="card" style="width: 18rem">
-            <img
-              src="assets/images/gold_loan1.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Gold Loan</h5>
-              <p class="card-text">
-                SBI Gold Loan can be availed by pledge of gold ornaments
-                including gold coins sold by Banks with minimum paper work and
-                low interest rate.
-              </p>
-              <a [routerLink]="['/goldloan']" class="btn btn-primary"
-                >Gold Loan Estimation</a
-              >
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="assets/images/homeloan1.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Home Loans</h5>
-              <p class="card-text">
-                SBI Home Loans offers a one stop solution to a home buyer. You
-                can browse through our range of home loan products, check your
-                eligibility and apply online!
-              </p>
-              <a [routerLink]="['/homeloan']" class="btn btn-primary"
-                >Home Loan Estimation</a
-              >
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="assets/images/carloan1.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Car Loan</h5>
-              <p class="card-text">
-                SBI offers car loans to its customers with interest rates
-                ranging between 7.70% and 13.25% and tenure of up to 7 years.
-              </p>
-              <a [routerLink]="['/carloan']" class="btn btn-primary"
-                >Car Loan Estimation</a
-              >
-            </div>
+    <div class="row p-4 justify-content-center">
+      <div class="card col-4 mx-4 pt-3 shadow-lg" style="width: 18rem">
+        <img
+          class="rounded"
+          src="assets/images/gold_loan1.jpg"
+          alt="Generic placeholder image"
+          width="255"
+          height="150"
+        />
+        <div class="d-flex flex-column align-items-center">
+          <h2>Gold Loan</h2>
+
+          <p>
+            SBI Gold Loan can be availed by pledge of gold ornaments including
+            gold coins sold by Banks with minimum paper work and low interest
+            rate.
+          </p>
+          <div class="align-bottom p-1">
+            <a [routerLink]="['/goldloan']" class="btn btn-primary"
+              >Gold Loan Estimation</a
+            >
           </div>
         </div>
+        <!-- /.col-lg-4 -->
+      </div>
+
+      <div class="card col-4 mx-4 pt-3 shadow-lg" style="width: 18rem">
+        <img
+          class="rounded"
+          src="assets/images/homeloan1.jpg"
+          alt="Generic placeholder image"
+          width="255"
+          height="150"
+        />
+        <div class="d-flex flex-column align-items-center">
+          <h2>Home Loans</h2>
+
+          <p>
+            SBI Home Loans offers a one stop solution to a home buyer. You can
+            browse through our range of home loan products, check your
+            eligibility and apply online!
+          </p>
+          <div class="align-bottom p-1">
+            <a [routerLink]="['/homeloan']" class="btn btn-primary"
+              >Home Loan Estimation</a
+            >
+          </div>
+        </div>
+        <!-- /.col-lg-4 -->
+      </div>
+
+      <div class="card col-4 mx-4 pt-3 shadow-lg" style="width: 18rem">
+        <img
+          class="rounded"
+          src="assets/images/carloan1.jpg"
+          alt="Generic placeholder image"
+          width="255"
+          height="150"
+        />
+        <div class="d-flex flex-column align-items-center">
+          <h2>Car Loan</h2>
+
+          <p>
+            SBI offers car loans to its customers with interest rates ranging
+            between 7.70% and 13.25% and tenure of up to 7 years.check your
+            eligibility.Low Interest Rates. Quick Processing.
+          </p>
+          <div class="align-bottom p-1">
+            <a [routerLink]="['/carloan']" class="btn btn-primary"
+              >Car Loan Estimation</a
+            >
+          </div>
+        </div>
+        <!-- /.col-lg-4 -->
       </div>
     </div>
   </div>
-</section>
+</div>
