@@ -4,3 +4,7 @@
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
+
+#outer {
+  border-radius: 15px;
+}

@@ -4,3 +4,13 @@
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
+body {
+  background-color: #e3f2fd;
+}
+
+#inside-form {
+  background-color: rgb(117, 207, 248);
+}
+#bgclr {
+  background-color: #bbdef6;
+}

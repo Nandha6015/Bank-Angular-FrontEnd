@@ -1,42 +1,52 @@
-<section class="vh-100">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col col-xl-10">
-        <div class="card" style="border-radius: 25px">
-          <div class="row g-0">
-            <div class="col-md-6 col-lg-5 d-none d-md-block">
-              <img
-                id="image"
-                src="assets/images/homeloan.png"
-                alt="login form"
-                class="img-fluid"
-                style="border-radius: 5 rem"
-              />
-            </div>
-            <div
-              class="col-md-6 col-lg-7 d-flex align-items-center"
-              style="background-color: lightblue"
-            >
+<body class="">
+  <section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 25px">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-5 d-none d-md-block">
+                <img
+                  id="image"
+                  src="assets/images/homeloan.png"
+                  alt="login form"
+                  class="img-fluid"
+                  style="border-radius: 5 rem"
+                />
+              </div>
               <div
-                class="card-body p-8 p-lg-5 text-black col d-flex justify-content-center"
+                class="col-md-6 col-lg-7 d-flex align-items-center"
+                id="bgclr"
+                style="border-radius: 15px"
               >
                 <div
-                  class="border border-dark p-lg-5 shadow-lg pt-2"
-                  style="border-radius: 15px"
+                  class="card-body p-8 p-lg-5 text-black col d-flex justify-content-center"
                 >
-                  <form>
-                    <label for="n1">Principle Amount</label><br />
-                    <input type="number" name="Principle amount" #n3 /><br />
-                    <label for="n2">Year</label><br />
-                    <input type="number" name="Year" #n4 /><br />
+                  <div
+                    class="border border-dark p-lg-5 shadow-lg pt-2"
+                    style="border-radius: 15px"
+                    id="inside-form"
+                  >
+                    <form class="m-1">
+                      <label for="n1" class="m-1">Principle Amount</label><br />
+                      <input
+                        type="number"
+                        class="m-1"
+                        name="Principle amount"
+                        #n3
+                      /><br />
+                      <label for="n2" class="m-1"> Year</label><br />
+                      <input type="number" class="m-1" name="Year" #n4 /><br />
 
-                    <input
-                      type="button"
-                      value="check"
-                      (click)="dem(n3.valueAsNumber, n4.valueAsNumber)"
-                    />
-                    <p>The interest is {{ amount1 | currency: "INR" }}</p>
-                  </form>
+                      <input
+                        type="button"
+                        value="check"
+                        class="m-1 mb-2"
+                        (click)="dem(n3.valueAsNumber, n4.valueAsNumber)"
+                      />
+                      <p>The interest is {{ amount1 | currency: "INR" }}</p>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -44,5 +54,5 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</body>
