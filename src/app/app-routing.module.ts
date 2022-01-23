@@ -7,9 +7,9 @@ import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ProfileComponent } from './component/profile/profile.component';
-import { GoldloanComponent } from './goldloan/goldloan.component';
-import { HomeloanComponent } from './homeloan/homeloan.component';
-import { CarloanComponent } from './carloan/carloan.component';
+import { GoldloanComponent } from './component/goldloan/goldloan.component';
+import { HomeloanComponent } from './component/homeloan/homeloan.component';
+import { CarloanComponent } from './component/carloan/carloan.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
